@@ -14,6 +14,7 @@
 		9238B6FF244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9238B6FD244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld */; };
 		9238B701244B81D30018B0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238B700244B81D30018B0E5 /* Assets.xcassets */; };
 		9238B704244B81D30018B0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238B702244B81D30018B0E5 /* LaunchScreen.storyboard */; };
+		9238B70E244B828F0018B0E5 /* Brastlewark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B70D244B828F0018B0E5 /* Brastlewark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9238B700244B81D30018B0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9238B703244B81D30018B0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9238B705244B81D30018B0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9238B70D244B828F0018B0E5 /* Brastlewark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brastlewark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,8 @@
 		9238B6E8244B81D10018B0E5 = {
 			isa = PBXGroup;
 			children = (
+				9238B70C244B826B0018B0E5 /* Model */,
+				9238B70B244B81F60018B0E5 /* ViewModel */,
 				9238B6F3244B81D20018B0E5 /* BrastlewarkCensus */,
 				9238B6F2244B81D20018B0E5 /* Products */,
 			);
@@ -68,6 +72,21 @@
 				9238B6FD244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld */,
 			);
 			path = BrastlewarkCensus;
+			sourceTree = "<group>";
+		};
+		9238B70B244B81F60018B0E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9238B70C244B826B0018B0E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9238B70D244B828F0018B0E5 /* Brastlewark.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 			files = (
 				9238B6F9244B81D20018B0E5 /* ViewController.swift in Sources */,
 				9238B6FF244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld in Sources */,
+				9238B70E244B828F0018B0E5 /* Brastlewark.swift in Sources */,
 				9238B6F5244B81D20018B0E5 /* AppDelegate.swift in Sources */,
 				9238B6F7244B81D20018B0E5 /* SceneDelegate.swift in Sources */,
 			);
