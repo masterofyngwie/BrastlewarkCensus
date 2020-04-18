@@ -8,4 +8,6 @@
 
 import Foundation
 
-
+struct Brastlewark : Codable{
+    
+}
