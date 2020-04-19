@@ -18,13 +18,13 @@ class BrastlewarkTableViewCell: UITableViewCell {
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var hairColor: UILabel!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var amigos: UILabel!
     
     var gnomeViewModel : GnomeViewModel!{
         didSet{
             self.age.text       = gnomeViewModel.age
             self.weight.text    = gnomeViewModel.weight
             self.height.text    = gnomeViewModel.height
-            self.hairColor.text = gnomeViewModel.hairColor
             self.name.text      = gnomeViewModel.name
             self.thumbnailImagen.loadImage(urlString: gnomeViewModel.thumbnailURL)
         }

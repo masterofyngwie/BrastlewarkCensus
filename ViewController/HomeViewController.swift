@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
         getData()
     }
     
+    @IBAction func animateSearchBar(_ sender: Any) {
+        animateBar()
+    }
+    
     func getData(){
         Service.shared.fetchPopulation { (data, error) in
             self.gnomes = data?.gnomes.map({GnomeViewModel(gnome: $0)}) ?? []
@@ -31,8 +35,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func animateSearchBar(_ sender: Any) {
-        
+    func animateBar(){
         self.heightSearchBar.constant = self.heightSearchBar.constant == 56 ? 0 : 56
         
         UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 1, options: .curveLinear, animations: {
@@ -56,11 +59,9 @@ extension HomeViewController : UITableViewDataSource{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BrastlewarkTableViewCell
         cell.gnomeViewModel = gnomes[indexPath.row]
-        return cell
-    }
+        cell.tag = indexPath.row
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
+        return cell
     }
 }
 
