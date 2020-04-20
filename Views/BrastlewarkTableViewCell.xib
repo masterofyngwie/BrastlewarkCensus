@@ -205,7 +205,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-h3-gfN">
                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="36"/>
-                                                <color key="backgroundColor" red="0.5" green="0.19459727112676056" blue="0.31571852992957744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Ver Amigos">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -215,6 +215,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ShowFriends:" destination="Y6r-bI-H6a" eventType="touchUpInside" id="kEg-9H-Rdy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -246,6 +249,7 @@
             <connections>
                 <outlet property="age" destination="eIE-eB-pZk" id="MpL-sE-O8B"/>
                 <outlet property="backView" destination="7R2-Vh-aPg" id="sSA-ps-loP"/>
+                <outlet property="friendsButton" destination="001-h3-gfN" id="fFJ-AI-VFJ"/>
                 <outlet property="height" destination="z8c-CQ-HdS" id="b7I-8j-eIq"/>
                 <outlet property="name" destination="iUb-O8-zsb" id="g5H-Kl-LYI"/>
                 <outlet property="thumbnailImagen" destination="c2i-Nf-vnx" id="5AR-ib-sWZ"/>

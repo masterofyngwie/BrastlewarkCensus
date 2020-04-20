@@ -21,7 +21,20 @@
 		9238B71D244BACEF0018B0E5 /* BrastlewarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238B71C244BACEF0018B0E5 /* BrastlewarkTableViewCell.xib */; };
 		9238B720244BB5D00018B0E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B71F244BB5D00018B0E5 /* Extensions.swift */; };
 		92E158BC244BE0C1001C0B94 /* GnomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158BB244BE0C1001C0B94 /* GnomeViewModel.swift */; };
+		92E158C6244CFE77001C0B94 /* BrastlewarkCensusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */; };
+		92E158CE244D0A95001C0B94 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158CD244D0A95001C0B94 /* FriendsViewController.swift */; };
+		92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92E158C8244CFE77001C0B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9238B6E9244B81D10018B0E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9238B6F0244B81D20018B0E5;
+			remoteInfo = BrastlewarkCensus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9238B6F1244B81D20018B0E5 /* BrastlewarkCensus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrastlewarkCensus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +53,22 @@
 		9238B71C244BACEF0018B0E5 /* BrastlewarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrastlewarkTableViewCell.xib; sourceTree = "<group>"; };
 		9238B71F244BB5D00018B0E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		92E158BB244BE0C1001C0B94 /* GnomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeViewModel.swift; sourceTree = "<group>"; };
+		92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkCensusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkCensusTests.swift; sourceTree = "<group>"; };
+		92E158C7244CFE77001C0B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E158CD244D0A95001C0B94 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9238B6EE244B81D20018B0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E158C0244CFE77001C0B94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +88,7 @@
 				9238B70C244B826B0018B0E5 /* Model */,
 				9238B70B244B81F60018B0E5 /* ViewModel */,
 				9238B6F3244B81D20018B0E5 /* BrastlewarkCensus */,
+				92E158C4244CFE77001C0B94 /* BrastlewarkCensusTests */,
 				9238B6F2244B81D20018B0E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9238B6F1244B81D20018B0E5 /* BrastlewarkCensus.app */,
+				92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9238B710244B916D0018B0E5 /* HomeViewController.swift */,
+				92E158CD244D0A95001C0B94 /* FriendsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -125,6 +153,7 @@
 		9238B715244B95770018B0E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */,
 				9238B716244B959D0018B0E5 /* BrastlewarkTableViewCell.swift */,
 				9238B71C244BACEF0018B0E5 /* BrastlewarkTableViewCell.xib */,
 			);
@@ -137,6 +166,15 @@
 				9238B71F244BB5D00018B0E5 /* Extensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		92E158C4244CFE77001C0B94 /* BrastlewarkCensusTests */ = {
+			isa = PBXGroup;
+			children = (
+				92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */,
+				92E158C7244CFE77001C0B94 /* Info.plist */,
+			);
+			path = BrastlewarkCensusTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +197,24 @@
 			productReference = 9238B6F1244B81D20018B0E5 /* BrastlewarkCensus.app */;
 			productType = "com.apple.product-type.application";
 		};
+		92E158C2244CFE77001C0B94 /* BrastlewarkCensusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E158CA244CFE77001C0B94 /* Build configuration list for PBXNativeTarget "BrastlewarkCensusTests" */;
+			buildPhases = (
+				92E158BF244CFE77001C0B94 /* Sources */,
+				92E158C0244CFE77001C0B94 /* Frameworks */,
+				92E158C1244CFE77001C0B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E158C9244CFE77001C0B94 /* PBXTargetDependency */,
+			);
+			name = BrastlewarkCensusTests;
+			productName = BrastlewarkCensusTests;
+			productReference = 92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +227,10 @@
 				TargetAttributes = {
 					9238B6F0244B81D20018B0E5 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					92E158C2244CFE77001C0B94 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9238B6F0244B81D20018B0E5;
 					};
 				};
 			};
@@ -188,6 +248,7 @@
 			projectRoot = "";
 			targets = (
 				9238B6F0244B81D20018B0E5 /* BrastlewarkCensus */,
+				92E158C2244CFE77001C0B94 /* BrastlewarkCensusTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +265,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92E158C1244CFE77001C0B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,8 +283,10 @@
 				92E158BC244BE0C1001C0B94 /* GnomeViewModel.swift in Sources */,
 				9238B6FF244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld in Sources */,
 				9238B71B244B9CA60018B0E5 /* Gnomes.swift in Sources */,
+				92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */,
 				9238B70E244B828F0018B0E5 /* Gnome.swift in Sources */,
 				9238B6F5244B81D20018B0E5 /* AppDelegate.swift in Sources */,
+				92E158CE244D0A95001C0B94 /* FriendsViewController.swift in Sources */,
 				9238B718244B959D0018B0E5 /* BrastlewarkTableViewCell.swift in Sources */,
 				9238B6F7244B81D20018B0E5 /* SceneDelegate.swift in Sources */,
 				9238B720244BB5D00018B0E5 /* Extensions.swift in Sources */,
@@ -224,7 +294,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92E158BF244CFE77001C0B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E158C6244CFE77001C0B94 /* BrastlewarkCensusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92E158C9244CFE77001C0B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9238B6F0244B81D20018B0E5 /* BrastlewarkCensus */;
+			targetProxy = 92E158C8244CFE77001C0B94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9238B6FA244B81D20018B0E5 /* Main.storyboard */ = {
@@ -398,6 +484,46 @@
 			};
 			name = Release;
 		};
+		92E158CB244CFE77001C0B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33H2C8Y4G7;
+				INFOPLIST_FILE = BrastlewarkCensusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrastlewarkCensus.app/BrastlewarkCensus";
+			};
+			name = Debug;
+		};
+		92E158CC244CFE77001C0B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33H2C8Y4G7;
+				INFOPLIST_FILE = BrastlewarkCensusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrastlewarkCensus.app/BrastlewarkCensus";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +541,15 @@
 			buildConfigurations = (
 				9238B709244B81D30018B0E5 /* Debug */,
 				9238B70A244B81D30018B0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E158CA244CFE77001C0B94 /* Build configuration list for PBXNativeTarget "BrastlewarkCensusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E158CB244CFE77001C0B94 /* Debug */,
+				92E158CC244CFE77001C0B94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

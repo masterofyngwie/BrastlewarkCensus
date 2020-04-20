@@ -17,25 +17,24 @@ class GnomeViewModel{
     let weight          : String
     let hairColor       : String
     let thumbnailURL    : String
-    let amigosTexto     : String
     let gnome           : Gnome
+    let friends         : [String]
+    let isActiveFriends : Bool
+    let tituloBotonFriends : String
+    
     
     
     //dependency injection
     init(gnome : Gnome){
-        
         self.gnome = gnome
-        
-        self.name       = gnome.name
-        self.age        = String(gnome.age)
-        self.height     = String(format: "%.2f", gnome.height)
-        self.weight     = String(format: "%.2f", gnome.weight)
-        self.hairColor  = gnome.hair_color
-        self.thumbnailURL = gnome.thumbnail
-        self.amigosTexto = gnome.friends.joined(separator: ",")
-        
-        print(gnome.friends.count)
+        self.name               = gnome.name
+        self.age                = String(gnome.age)
+        self.height             = String(format: "%.2f", gnome.height)
+        self.weight             = String(format: "%.2f", gnome.weight)
+        self.hairColor          = gnome.hair_color
+        self.thumbnailURL       = gnome.thumbnail
+        self.friends            = gnome.friends
+        self.isActiveFriends    = gnome.friends.count > 0 ? true : false
+        self.tituloBotonFriends = gnome.friends.count > 0 ? "Ver Amigos" : "No tiene amigos"
     }
-    
-    
 }

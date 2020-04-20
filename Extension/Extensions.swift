@@ -16,7 +16,6 @@ extension UIImageView {
     func loadImage(urlString : String){
         self.image = nil
         
-        print("hola")
         
         //Checar cache para la imagen primero
         if let cachedImage = imageCache.object(forKey: urlString as NSString) as? UIImage{
@@ -27,12 +26,10 @@ extension UIImageView {
         //Si no hay cache bajar imagen
         let url = URL.init(string: urlString)!
         
-//        print(url.absoluteString)
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {
-                        print("que pasa")
                         imageCache.setObject(image, forKey: urlString as NSString)
                         self?.image = image
                     }
