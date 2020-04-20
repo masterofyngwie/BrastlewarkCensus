@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import KRProgressHUD
+
 
 //Singleton para obtener datos de urls
 
@@ -15,6 +17,8 @@ class Service: NSObject {
     static let shared = Service()
     
     func fetchPopulation(completion: @escaping (Gnomes?, Error?) -> ()) {
+        KRProgressHUD.show(withMessage: "Cargando población...")
+        
         let urlString = "https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json"
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
@@ -30,7 +34,9 @@ class Service: NSObject {
             do {
                 let data = try JSONDecoder().decode(Gnomes.self, from: data)
                 
-                print(data.gnomes.count)
+                DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                   KRProgressHUD.dismiss()
+                }
                 
                 DispatchQueue.main.async {
                     completion(data, nil)

@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36768DB1CDBB74E891BC4FA2 /* Pods_BrastlewarkCensus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A4CC7A8A456BDFA4CEC41 /* Pods_BrastlewarkCensus.framework */; };
+		1E17A2B72657DB2AE5A3A234 /* libPods-BrastlewarkCensusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B0B4C9F47E5B34BCDA9FA0 /* libPods-BrastlewarkCensusTests.a */; };
 		9238B6F5244B81D20018B0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B6F4244B81D20018B0E5 /* AppDelegate.swift */; };
 		9238B6F7244B81D20018B0E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B6F6244B81D20018B0E5 /* SceneDelegate.swift */; };
 		9238B6FC244B81D20018B0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238B6FA244B81D20018B0E5 /* Main.storyboard */; };
@@ -23,9 +23,9 @@
 		9238B720244BB5D00018B0E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B71F244BB5D00018B0E5 /* Extensions.swift */; };
 		92E158BC244BE0C1001C0B94 /* GnomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158BB244BE0C1001C0B94 /* GnomeViewModel.swift */; };
 		92E158C6244CFE77001C0B94 /* BrastlewarkCensusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */; };
-		92E158CE244D0A95001C0B94 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158CD244D0A95001C0B94 /* FriendsViewController.swift */; };
 		92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */; };
-		E165151610137A626E0E9FF1 /* Pods_BrastlewarkCensusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001FCAAFA3144F4CC7AF1A22 /* Pods_BrastlewarkCensusTests.framework */; };
+		92E158DE244E316A001C0B94 /* BrastlewarkCensusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158DD244E316A001C0B94 /* BrastlewarkCensusUITests.swift */; };
+		E60DFB25926AC64253867643 /* libPods-BrastlewarkCensus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 850969E59E83B440A558908B /* libPods-BrastlewarkCensus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,20 @@
 			remoteGlobalIDString = 9238B6F0244B81D20018B0E5;
 			remoteInfo = BrastlewarkCensus;
 		};
+		92E158E0244E316A001C0B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9238B6E9244B81D10018B0E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9238B6F0244B81D20018B0E5;
+			remoteInfo = BrastlewarkCensus;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001FCAAFA3144F4CC7AF1A22 /* Pods_BrastlewarkCensusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkCensusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDCD9F65E787519144B697A /* Pods-BrastlewarkCensusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkCensusTests.debug.xcconfig"; path = "Target Support Files/Pods-BrastlewarkCensusTests/Pods-BrastlewarkCensusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35EC0F634B5E7BB9D8DF8ECD /* Pods-BrastlewarkCensusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkCensusTests.release.xcconfig"; path = "Target Support Files/Pods-BrastlewarkCensusTests/Pods-BrastlewarkCensusTests.release.xcconfig"; sourceTree = "<group>"; };
 		59542BD2DC7315745BC79559 /* Pods-BrastlewarkCensus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkCensus.debug.xcconfig"; path = "Target Support Files/Pods-BrastlewarkCensus/Pods-BrastlewarkCensus.debug.xcconfig"; sourceTree = "<group>"; };
+		850969E59E83B440A558908B /* libPods-BrastlewarkCensus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrastlewarkCensus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238B6F1244B81D20018B0E5 /* BrastlewarkCensus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrastlewarkCensus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238B6F4244B81D20018B0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9238B6F6244B81D20018B0E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +69,13 @@
 		92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkCensusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkCensusTests.swift; sourceTree = "<group>"; };
 		92E158C7244CFE77001C0B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E158CD244D0A95001C0B94 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		92E158D3244E05C4001C0B94 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A34A4CC7A8A456BDFA4CEC41 /* Pods_BrastlewarkCensus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkCensus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E158DB244E316A001C0B94 /* BrastlewarkCensusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkCensusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E158DD244E316A001C0B94 /* BrastlewarkCensusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkCensusUITests.swift; sourceTree = "<group>"; };
+		92E158DF244E316A001C0B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59BC5A669C962FA7CEE9B8D /* Pods-BrastlewarkCensus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkCensus.release.xcconfig"; path = "Target Support Files/Pods-BrastlewarkCensus/Pods-BrastlewarkCensus.release.xcconfig"; sourceTree = "<group>"; };
+		C0B0B4C9F47E5B34BCDA9FA0 /* libPods-BrastlewarkCensusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrastlewarkCensusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36768DB1CDBB74E891BC4FA2 /* Pods_BrastlewarkCensus.framework in Frameworks */,
+				E60DFB25926AC64253867643 /* libPods-BrastlewarkCensus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +91,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E165151610137A626E0E9FF1 /* Pods_BrastlewarkCensusTests.framework in Frameworks */,
+				1E17A2B72657DB2AE5A3A234 /* libPods-BrastlewarkCensusTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E158D8244E316A001C0B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				92E158D3244E05C4001C0B94 /* Pastel.framework */,
-				A34A4CC7A8A456BDFA4CEC41 /* Pods_BrastlewarkCensus.framework */,
-				001FCAAFA3144F4CC7AF1A22 /* Pods_BrastlewarkCensusTests.framework */,
+				850969E59E83B440A558908B /* libPods-BrastlewarkCensus.a */,
+				C0B0B4C9F47E5B34BCDA9FA0 /* libPods-BrastlewarkCensusTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 				9238B70B244B81F60018B0E5 /* ViewModel */,
 				9238B6F3244B81D20018B0E5 /* BrastlewarkCensus */,
 				92E158C4244CFE77001C0B94 /* BrastlewarkCensusTests */,
+				92E158DC244E316A001C0B94 /* BrastlewarkCensusUITests */,
 				9238B6F2244B81D20018B0E5 /* Products */,
 				9D7F4FEF699C52DEA337FBB9 /* Pods */,
 				2DA59D8ABFC2941499D50E25 /* Frameworks */,
@@ -121,6 +138,7 @@
 			children = (
 				9238B6F1244B81D20018B0E5 /* BrastlewarkCensus.app */,
 				92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */,
+				92E158DB244E316A001C0B94 /* BrastlewarkCensusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				9238B710244B916D0018B0E5 /* HomeViewController.swift */,
-				92E158CD244D0A95001C0B94 /* FriendsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -200,6 +217,15 @@
 			path = BrastlewarkCensusTests;
 			sourceTree = "<group>";
 		};
+		92E158DC244E316A001C0B94 /* BrastlewarkCensusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92E158DD244E316A001C0B94 /* BrastlewarkCensusUITests.swift */,
+				92E158DF244E316A001C0B94 /* Info.plist */,
+			);
+			path = BrastlewarkCensusUITests;
+			sourceTree = "<group>";
+		};
 		9D7F4FEF699C52DEA337FBB9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +248,6 @@
 				9238B6ED244B81D20018B0E5 /* Sources */,
 				9238B6EE244B81D20018B0E5 /* Frameworks */,
 				9238B6EF244B81D20018B0E5 /* Resources */,
-				61A74E740E9B8BB842C0E1EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +277,24 @@
 			productReference = 92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		92E158DA244E316A001C0B94 /* BrastlewarkCensusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E158E4244E316A001C0B94 /* Build configuration list for PBXNativeTarget "BrastlewarkCensusUITests" */;
+			buildPhases = (
+				92E158D7244E316A001C0B94 /* Sources */,
+				92E158D8244E316A001C0B94 /* Frameworks */,
+				92E158D9244E316A001C0B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E158E1244E316A001C0B94 /* PBXTargetDependency */,
+			);
+			name = BrastlewarkCensusUITests;
+			productName = BrastlewarkCensusUITests;
+			productReference = 92E158DB244E316A001C0B94 /* BrastlewarkCensusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -266,6 +309,10 @@
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					92E158C2244CFE77001C0B94 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9238B6F0244B81D20018B0E5;
+					};
+					92E158DA244E316A001C0B94 = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 9238B6F0244B81D20018B0E5;
 					};
@@ -286,6 +333,7 @@
 			targets = (
 				9238B6F0244B81D20018B0E5 /* BrastlewarkCensus */,
 				92E158C2244CFE77001C0B94 /* BrastlewarkCensusTests */,
+				92E158DA244E316A001C0B94 /* BrastlewarkCensusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +351,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		92E158C1244CFE77001C0B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E158D9244E316A001C0B94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,23 +387,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61A74E740E9B8BB842C0E1EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BrastlewarkCensus/Pods-BrastlewarkCensus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BrastlewarkCensus/Pods-BrastlewarkCensus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrastlewarkCensus/Pods-BrastlewarkCensus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8D0644D11F6DCEF0DF192E31 /* [CP] Check Pods Manifest.lock */ = {
@@ -387,7 +425,6 @@
 				92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */,
 				9238B70E244B828F0018B0E5 /* Gnome.swift in Sources */,
 				9238B6F5244B81D20018B0E5 /* AppDelegate.swift in Sources */,
-				92E158CE244D0A95001C0B94 /* FriendsViewController.swift in Sources */,
 				9238B718244B959D0018B0E5 /* BrastlewarkTableViewCell.swift in Sources */,
 				9238B6F7244B81D20018B0E5 /* SceneDelegate.swift in Sources */,
 				9238B720244BB5D00018B0E5 /* Extensions.swift in Sources */,
@@ -403,6 +440,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92E158D7244E316A001C0B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E158DE244E316A001C0B94 /* BrastlewarkCensusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -410,6 +455,11 @@
 			isa = PBXTargetDependency;
 			target = 9238B6F0244B81D20018B0E5 /* BrastlewarkCensus */;
 			targetProxy = 92E158C8244CFE77001C0B94 /* PBXContainerItemProxy */;
+		};
+		92E158E1244E316A001C0B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9238B6F0244B81D20018B0E5 /* BrastlewarkCensus */;
+			targetProxy = 92E158E0244E316A001C0B94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -552,6 +602,7 @@
 			baseConfigurationReference = 59542BD2DC7315745BC79559 /* Pods-BrastlewarkCensus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33H2C8Y4G7;
 				INFOPLIST_FILE = BrastlewarkCensus/Info.plist;
@@ -560,8 +611,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensus;
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.Brastlewark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,6 +624,7 @@
 			baseConfigurationReference = B59BC5A669C962FA7CEE9B8D /* Pods-BrastlewarkCensus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33H2C8Y4G7;
 				INFOPLIST_FILE = BrastlewarkCensus/Info.plist;
@@ -580,8 +633,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensus;
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.Brastlewark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -629,6 +683,44 @@
 			};
 			name = Release;
 		};
+		92E158E2244E316A001C0B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33H2C8Y4G7;
+				INFOPLIST_FILE = BrastlewarkCensusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrastlewarkCensus;
+			};
+			name = Debug;
+		};
+		92E158E3244E316A001C0B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33H2C8Y4G7;
+				INFOPLIST_FILE = BrastlewarkCensusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testKavak.BrastlewarkCensusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrastlewarkCensus;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -655,6 +747,15 @@
 			buildConfigurations = (
 				92E158CB244CFE77001C0B94 /* Debug */,
 				92E158CC244CFE77001C0B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E158E4244E316A001C0B94 /* Build configuration list for PBXNativeTarget "BrastlewarkCensusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E158E2244E316A001C0B94 /* Debug */,
+				92E158E3244E316A001C0B94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

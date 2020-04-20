@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "223ACB2993ED61193B95A52611ED34E7"
-               BuildableName = "Pastel.framework"
+               BuildableName = "libPastel.a"
                BlueprintName = "Pastel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

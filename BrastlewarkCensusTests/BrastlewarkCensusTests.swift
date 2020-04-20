@@ -40,8 +40,6 @@ class BrastlewarkCensusTests: XCTestCase {
         XCTAssertEqual(String(format: "%.2f", gnome.weight), gnomeViewModel.weight)
         XCTAssertEqual(gnome.thumbnail, gnomeViewModel.thumbnailURL)
         XCTAssertEqual(String(gnome.age), gnomeViewModel.age)
-        
-        
     }
 
 }

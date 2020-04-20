@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         setupTableView()
         getData()
         setupSearchBar()
+        
     }
     
     func setupSearchBar(){
@@ -51,11 +52,17 @@ class HomeViewController: UIViewController {
     
     func animateBar(){
         self.heightSearchBar.constant = self.heightSearchBar.constant == 56 ? 0 : 56
-        
+                
         UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 1, options: .curveLinear, animations: {
             self.view.layoutIfNeeded()
             self.searchBar.becomeFirstResponder()
+            
+            if self.heightSearchBar.constant < 56{
+                self.view.endEditing(true)
+            }
+            
         }, completion: nil)
+        
     }
     
     func setupTableView(){
@@ -63,13 +70,7 @@ class HomeViewController: UIViewController {
         tableView.estimatedRowHeight = 600
         tableView.rowHeight = UITableView.automaticDimension
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination
-        if let friendsController = destination as? FriendsViewController{
-            friendsController.gnomeViewModel = gnomeToSend 
-        }
-    }
+
     
     func restoreData(){
         animateBar()
@@ -90,8 +91,6 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BrastlewarkTableViewCell
         cell.gnomeViewModel = gnomes[indexPath.row]
-        cell.delegate = self
-        
         return cell
     }
 }
@@ -100,6 +99,7 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
 // MARK: Setteando UISearchBarDelegate
 extension HomeViewController : UISearchBarDelegate{
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
         restoreData()
     }
     
@@ -123,9 +123,3 @@ extension HomeViewController : UISearchBarDelegate{
     }
 }
 
-// MARK: Delegado para cuando se presiona boton de amigos en celdas
-extension HomeViewController : FriendsButtonDelegate{
-    func showFriends(gnome: GnomeViewModel) {
-        print("hola")
-    }
-}

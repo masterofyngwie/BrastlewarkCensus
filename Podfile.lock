@@ -1,16 +1,24 @@
 PODS:
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
   - Pastel (0.6.0)
 
 DEPENDENCIES:
+  - KRProgressHUD
   - Pastel
 
 SPEC REPOS:
   trunk:
+    - KRActivityIndicatorView
+    - KRProgressHUD
     - Pastel
 
 SPEC CHECKSUMS:
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
   Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
 
-PODFILE CHECKSUM: 9032bea59d1a1de0c0d0eb6f8c5fde9427f097a6
+PODFILE CHECKSUM: 9224d425e26be45c40db4dca03ad78877d401622
 
 COCOAPODS: 1.9.1

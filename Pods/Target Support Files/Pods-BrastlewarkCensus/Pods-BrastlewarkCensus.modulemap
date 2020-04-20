@@ -1,4 +1,4 @@
-framework module Pods_BrastlewarkCensus {
+module Pods_BrastlewarkCensus {
   umbrella header "Pods-BrastlewarkCensus-umbrella.h"
 
   export *

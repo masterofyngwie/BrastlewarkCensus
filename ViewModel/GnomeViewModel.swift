@@ -11,17 +11,31 @@ import UIKit
 
 class GnomeViewModel{
     
+    
     let name            : String
     let age             : String
     let height          : String
     let weight          : String
-    let hairColor       : String
     let thumbnailURL    : String
     let gnome           : Gnome
     let friends         : [String]
     let isActiveFriends : Bool
     let tituloBotonFriends : String
+    var hairColor: UIColor!
+    let textoAmigos     : String
     
+    
+    enum HairColor : String {
+        case Red
+        case Blue
+        case Gray
+        case Purple
+        case Pink
+        case Yellow
+        case Green
+        case Black
+        case Brown
+    }
     
     
     //dependency injection
@@ -31,10 +45,40 @@ class GnomeViewModel{
         self.age                = String(gnome.age)
         self.height             = String(format: "%.2f", gnome.height)
         self.weight             = String(format: "%.2f", gnome.weight)
-        self.hairColor          = gnome.hair_color
         self.thumbnailURL       = gnome.thumbnail
         self.friends            = gnome.friends
         self.isActiveFriends    = gnome.friends.count > 0 ? true : false
         self.tituloBotonFriends = gnome.friends.count > 0 ? "Ver Amigos" : "No tiene amigos"
+        self.textoAmigos        = gnome.friends.count > 0 ? gnome.friends.joined(separator: ",") : "No tiene amigos 😭💔"
+
+        getGnomeHairColor(gnome.hair_color)
     }
+    
+    private func getGnomeHairColor(_ color : String){
+        if let hairColor = HairColor(rawValue: color){
+            switch hairColor {
+            case .Red:
+                self.hairColor = .red
+            case .Blue:
+                self.hairColor = .blue
+            case .Gray:
+                self.hairColor = .gray
+            case .Purple:
+                self.hairColor = .purple
+            case .Pink:
+                self.hairColor = .cyan
+            case .Yellow:
+                self.hairColor = .yellow
+            case .Green:
+                self.hairColor = .green
+            case .Black:
+                self.hairColor = .black
+            case .Brown:
+                self.hairColor = .brown
+            }
+        }
+    }
+    
 }
+
+
