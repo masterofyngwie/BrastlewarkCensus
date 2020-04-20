@@ -8,6 +8,8 @@
 
 import UIKit
 
+//ViewController que se encarga de la pantalla principal de la aplicacion. Se utilizo el patron de diseño de arquitectura MVVM para conectar el Modelo con la vista.
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!

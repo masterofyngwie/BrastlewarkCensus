@@ -11,7 +11,7 @@ import UIKit
 import KRProgressHUD
 
 
-//Singleton para obtener datos de urls
+//Singleton para obtener datos apartir de un Request hecho hacia una URL
 
 class Service: NSObject {
     static let shared = Service()

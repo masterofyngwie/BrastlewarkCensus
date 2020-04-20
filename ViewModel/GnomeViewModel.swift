@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+/*ViewModel: Encargado de actualiza el modelo de la actualizar
+ la vista a traves de la salida de datos del modelo. Une modelo
+ Gnome y Vista de las BrastlewarkTableViewCell */
+
 class GnomeViewModel{
     
     

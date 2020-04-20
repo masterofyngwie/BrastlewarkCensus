@@ -9,7 +9,7 @@
 import UIKit
 import Pastel
 
-
+//Aqui se puede encontrar toda la logica de celda la cual es obtenida de un GnomeViewModel que se encarga de procesar toda la logica de las vistas.
 class BrastlewarkTableViewCell: UITableViewCell {
     
     @IBOutlet weak var backView: PastelView!

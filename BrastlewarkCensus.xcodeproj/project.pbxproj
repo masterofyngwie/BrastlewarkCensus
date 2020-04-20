@@ -23,7 +23,6 @@
 		9238B720244BB5D00018B0E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238B71F244BB5D00018B0E5 /* Extensions.swift */; };
 		92E158BC244BE0C1001C0B94 /* GnomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158BB244BE0C1001C0B94 /* GnomeViewModel.swift */; };
 		92E158C6244CFE77001C0B94 /* BrastlewarkCensusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */; };
-		92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */; };
 		92E158DE244E316A001C0B94 /* BrastlewarkCensusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E158DD244E316A001C0B94 /* BrastlewarkCensusUITests.swift */; };
 		E60DFB25926AC64253867643 /* libPods-BrastlewarkCensus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 850969E59E83B440A558908B /* libPods-BrastlewarkCensus.a */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		92E158C3244CFE77001C0B94 /* BrastlewarkCensusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkCensusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E158C5244CFE77001C0B94 /* BrastlewarkCensusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkCensusTests.swift; sourceTree = "<group>"; };
 		92E158C7244CFE77001C0B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		92E158D3244E05C4001C0B94 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E158DB244E316A001C0B94 /* BrastlewarkCensusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkCensusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E158DD244E316A001C0B94 /* BrastlewarkCensusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkCensusUITests.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 		9238B715244B95770018B0E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				92E158CF244D0CDA001C0B94 /* FriendsCollectionViewCell.swift */,
 				9238B716244B959D0018B0E5 /* BrastlewarkTableViewCell.swift */,
 				9238B71C244BACEF0018B0E5 /* BrastlewarkTableViewCell.xib */,
 			);
@@ -422,7 +419,6 @@
 				92E158BC244BE0C1001C0B94 /* GnomeViewModel.swift in Sources */,
 				9238B6FF244B81D20018B0E5 /* BrastlewarkCensus.xcdatamodeld in Sources */,
 				9238B71B244B9CA60018B0E5 /* Gnomes.swift in Sources */,
-				92E158D0244D0CDA001C0B94 /* FriendsCollectionViewCell.swift in Sources */,
 				9238B70E244B828F0018B0E5 /* Gnome.swift in Sources */,
 				9238B6F5244B81D20018B0E5 /* AppDelegate.swift in Sources */,
 				9238B718244B959D0018B0E5 /* BrastlewarkTableViewCell.swift in Sources */,

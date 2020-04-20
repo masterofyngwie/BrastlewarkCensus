@@ -6,6 +6,11 @@
 //  Copyright © 2020 jorge. All rights reserved.
 //
 
+
+/*Model de Gnomo que conforma al protocolo
+ Codable para facilitar el encoding y decoding
+ de la data que viene del JSON obtenido del servidor*/
+
 import Foundation
 
 struct Gnome : Codable{
