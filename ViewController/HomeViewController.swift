@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
     
     func setupSearchBar(){
         searchBar.delegate = self
+        searchBar.showsCancelButton = true
         if #available(iOS 13.0, *) {
            searchBar.searchTextField.backgroundColor = UIColor.white
         }
@@ -69,6 +70,13 @@ class HomeViewController: UIViewController {
             friendsController.gnomeViewModel = gnomeToSend 
         }
     }
+    
+    func restoreData(){
+        animateBar()
+        searchBar.searchTextField.resignFirstResponder()
+        gnomes = gnomesSearch
+        tableView.reloadData()
+    }
 }
 
 
@@ -92,23 +100,26 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
 // MARK: Setteando UISearchBarDelegate
 extension HomeViewController : UISearchBarDelegate{
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        print("cancel")
-        getData()
+        restoreData()
     }
     
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        self.view.endEditing(true)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let searchResult = gnomesSearch.filter({
-            $0.name.lowercased().contains(searchText.lowercased())
-        })
         
-        print(searchResult.count)
-        
-        gnomes = searchResult
-        tableView.reloadData()
+        if searchText.count > 0{
+            let searchResult = gnomesSearch.filter({
+                $0.name.lowercased().contains(searchText.lowercased())
+            })
+            
+            gnomes = searchResult
+            tableView.reloadData()
+        }else{
+            restoreData()
+        }
     }
 }
 

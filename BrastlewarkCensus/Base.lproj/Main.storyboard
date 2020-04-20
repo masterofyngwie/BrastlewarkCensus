@@ -16,17 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="uq4-rO-Rws">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Buscar habitante" translatesAutoresizingMaskIntoConstraints="NO" id="uq4-rO-Rws">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="XV3-j6-ZWT"/>
                                 </constraints>
-                                <color key="barTintColor" white="0.0" alpha="0.77109925180000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="0.77109925180000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GYk-3e-KWa">
-                                <rect key="frame" x="0.0" y="5" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="jyl-tT-dUk"/>
@@ -38,11 +39,11 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GYk-3e-KWa" secondAttribute="trailing" id="0c1-UD-pft"/>
                             <constraint firstItem="GYk-3e-KWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JzX-AP-2yD"/>
+                            <constraint firstItem="uq4-rO-Rws" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K1I-v1-zn7"/>
                             <constraint firstItem="uq4-rO-Rws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PnT-rm-5Yc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GYk-3e-KWa" secondAttribute="bottom" id="UJf-bc-miG"/>
-                            <constraint firstItem="GYk-3e-KWa" firstAttribute="top" secondItem="uq4-rO-Rws" secondAttribute="bottom" constant="5" id="bPa-GY-nZP"/>
-                            <constraint firstItem="uq4-rO-Rws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fZL-9n-Twg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uq4-rO-Rws" secondAttribute="trailing" id="ojF-C1-9b0"/>
+                            <constraint firstItem="uq4-rO-Rws" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Vdc-Ai-XDY"/>
+                            <constraint firstItem="GYk-3e-KWa" firstAttribute="top" secondItem="uq4-rO-Rws" secondAttribute="bottom" id="bPa-GY-nZP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

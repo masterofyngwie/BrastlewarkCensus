@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pastel
 
 protocol FriendsButtonDelegate : class{
     func showFriends(gnome : GnomeViewModel)
@@ -16,7 +17,7 @@ class BrastlewarkTableViewCell: UITableViewCell {
     
     weak var delegate : FriendsButtonDelegate?
 
-    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var backView: PastelView!
     @IBOutlet weak var thumbnailImagen: UIImageView!
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var weight: UILabel!
@@ -41,6 +42,25 @@ class BrastlewarkTableViewCell: UITableViewCell {
     }
     
     override func draw(_ rect: CGRect) {
+        animateBackView()
+    }
+    
+    private func animateBackView(){
+        
+        
+        backView.startPastelPoint = .bottomLeft
+        backView.endPastelPoint = .topRight
+        
+        // Custom Duration
+           backView.animationDuration = 2.0
+
+           // Custom Color
+           backView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
+                                 UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
+                                 UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0)])
+        
+        backView.startAnimation()
+        
         backView.addShadow()
     }
     
